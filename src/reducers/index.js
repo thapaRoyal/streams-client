@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import authReducer from "./authReducer";
+
 export default combineReducers({
-  replaceMe: () => "demo text",
+  auth: authReducer,
 });
