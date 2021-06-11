@@ -1,13 +1,14 @@
 import React from "react";
+import { connect } from "react-redux";
+import { fetchStreams } from "../../actions";
 
-const StreamList = () => {
-  return (
-    <div>
-      <h1>Stream List</h1>
-    </div>
-  );
-};
+class StreamList extends React.Component {
+  componentDidMount() {
+    this.props.fetchStreams();
+  }
+  render() {
+    return <div>Stream List</div>;
+  }
+}
 
-export default StreamList;
-
-// 845766668237-itrgdb80a4ks1klpp75g75glr1dsp958.apps.googleusercontent.com
+export default connect(null, { fetchStreams })(StreamList);
