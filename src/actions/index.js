@@ -3,10 +3,10 @@ import {
   SIGN_IN,
   SIGN_OUT,
   CREATE_STREAM,
-  FETCH_SETREAMS,
-  FETCH_SETREAM,
-  DELETE_SETREAM,
-  EDIT_SETREAM,
+  FETCH_STREAMS,
+  FETCH_STREAM,
+  DELETE_STREAM,
+  EDIT_STREAM,
 } from "./types";
 
 export const signIn = (userId) => {
